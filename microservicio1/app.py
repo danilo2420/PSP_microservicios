@@ -15,4 +15,4 @@ def get_geo(municipioid):
         return jsonify({"error": "Municipio no encontrado"}), 404  # Devuelve 404 si no coincide
 
 if __name__ == '__main__':
-    app1.run(port=5000)
+    app1.run(host='0.0.0.0', port=5000)

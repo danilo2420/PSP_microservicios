@@ -14,4 +14,4 @@ def get_demo(municipioid):
         return jsonify({"error": "Municipio no encontrado"}), 404  # Devuelve 404 si no coincide
 
 if __name__ == '__main__':
-    app3.run(port=5002)
+    app3.run(host='0.0.0.0', port=5002)

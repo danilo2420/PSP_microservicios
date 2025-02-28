@@ -25,7 +25,7 @@ def get_meteo(municipioid):
             return jsonify(weather_data), 200
         
     except e:
-            return jsonify({"error": f"{e}"}), 500
+        return jsonify({"error": f"{e}"}), 500
     
 if __name__ == '__main__':
-    app2.run(port=5001)  
+    app2.run(host='0.0.0.0', port=5001)  
